@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="css/jquery-ui.css"/>
+		<script type="text/javascript" src="js/jquery.js"> </script>
+		<script type="text/javascript" src="js/jquery-ui.js"> </script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#tabs').tabs();
+			});
+		</script>
+		<style>
+			ul{
+				position: absolute;
+			}
+			.panel{
+				position: absolute;
+				top: 80px;
+			}
+			#mapa{
+				position: absolute;
+			}
+			.icon{
+				cursor: pointer;
+				height: 31px;
+				position: absolute;
+			}
+			#icon1{
+				top: 401px;
+				left: 523px;
+			}
+			#icon2{
+				top: 310px;
+				left: 399px;
+			}
+			#icon3{
+				top: 287px;
+				left: 368px;
+			}
+			#icon4{
+				top: 315px;
+				left: 585px;
+			}
+			#icon5{
+				top: 243px;
+				left: 429px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="tabs">
+			<ul>
+				<li class="active"><a href="#tabPequeno"> <b>Mapa pequeño </b></a></li>
+				<li> <a href="#tabGrande"> <b> Mapa grande </b></a> </li>
+			</ul>
+		
+			<div class="panel" id="tabPequeno">		
+				<img src="mapa.png" alt="" id="mapa"/>
+				<img src="hotel.png" alt="" id="icon1" class="icon" title="Hotel du Breuil / B11hotel"/>
+				<img src="icon.png" alt="" id="icon2" class="icon" title="Cathédrale Saint Nicolas"/>
+				<!-- <img src="icon.png" alt="" id="icon3" class="icon" title="Ahí lo pone: catedral"/>
+				<img src="icon.png" alt="" id="icon4" class="icon" title="'Le pont vieux' - El puente viejo. Así no suena especial, pero creo que pasear por ahí es bonito :)"/>
+				<img src="info.png" alt="" id="icon5" class="icon" title="Info turismo - aquí podemos coger un mapa, creo."/>  -->
+			</div>
+			
+			<div class="panel" id="tabGrande">
+				<img src="mapa_grande.png" alt="" id="mapa"/>
+				
+			</div>
+		</div>
+	</body>
+</html>
